@@ -577,7 +577,7 @@ footer{
 
 <!-- NAV -->
 <nav id="navbar">
-  <div class="nav-logo">SK.dev</div>
+  <div class="nav-logo">dev shuel</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -632,7 +632,7 @@ footer{
           <div class="avatar-ring"></div>
           <div class="avatar-ring-2"></div>
           <div class="avatar-img" id="avatarImg">
-            <span class="avatar-placeholder">SK</span>
+            <span class="avatar-placeholder">Shuel</span>
           </div>
         </div>
         <div class="terminal">
@@ -765,7 +765,7 @@ footer{
       <p class="section-label">Portfolio</p>
       <h2 class="section-title">Featured <span style="color:var(--accent)">Projects</span></h2>
       <div class="divider"></div>
-      <p class="section-sub">A collection of work that showcases my ability to solve real-world problems with elegant technical solutions.</p>
+      <p class="section-sub">A collection of work that showcases my ability to solve real world problems with elegant technical solutions.</p>
     </div>
     <div class="projects-grid">
 
@@ -773,7 +773,7 @@ footer{
       <div class="project-card reveal reveal-delay-1">
         <div class="project-img">
           <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a0a00,#3d1f00)">
-            <span>🥐</span>
+            <!--<span>🥐</span>-->
             <div class="project-img-overlay"></div>
           </div>
           <span class="project-category">E-Commerce</span>
@@ -799,7 +799,7 @@ footer{
       <div class="project-card reveal reveal-delay-2">
         <div class="project-img">
           <div class="project-img-placeholder" style="background:linear-gradient(135deg,#001a0d,#003d1f)">
-            <span>🌍</span>
+            <!--<span>🌍</span>-->
             <div class="project-img-overlay"></div>
           </div>
           <span class="project-category">Tourism</span>
@@ -824,7 +824,7 @@ footer{
       <div class="project-card reveal reveal-delay-3">
         <div class="project-img">
           <div class="project-img-placeholder" style="background:linear-gradient(135deg,#0a1a00,#1a3d00)">
-            <span>🐄</span>
+            <!--<span>🐄</span>-->
             <div class="project-img-overlay"></div>
           </div>
           <span class="project-category">Management System</span>
@@ -849,7 +849,7 @@ footer{
       <div class="project-card reveal reveal-delay-1">
         <div class="project-img">
           <div class="project-img-placeholder" style="background:linear-gradient(135deg,#00081a,#001a3d)">
-            <span>💼</span>
+            <!--<span>💼</span>-->
             <div class="project-img-overlay"></div>
           </div>
           <span class="project-category">Portfolio</span>
@@ -873,7 +873,7 @@ footer{
       <div class="project-card reveal reveal-delay-2">
         <div class="project-img">
           <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a001a,#3d003d)">
-            <span>🛒</span>
+            <!--<span>🛒</span>-->
             <div class="project-img-overlay"></div>
           </div>
           <span class="project-category">E-Commerce</span>
@@ -898,7 +898,7 @@ footer{
       <div class="project-card reveal reveal-delay-3">
         <div class="project-img">
           <div class="project-img-placeholder" style="background:linear-gradient(135deg,#001a1a,#003d3d)">
-            <span>🎓</span>
+            <!--<span>🎓</span>-->
             <div class="project-img-overlay"></div>
           </div>
           <span class="project-category">Education</span>
@@ -933,32 +933,32 @@ footer{
     </div>
     <div class="services-grid">
       <div class="service-card reveal reveal-delay-1">
-        <div class="service-icon">🌐</div>
+        <div class="service-icon"></div>
         <h3 class="service-title">Web Development</h3>
         <p class="service-desc">Full-stack web applications built with modern technologies. From simple landing pages to complex platforms — fast, scalable, and secure.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
-        <div class="service-icon">📱</div>
+        <div class="service-icon"></div>
         <h3 class="service-title">Responsive Design</h3>
         <p class="service-desc">Mobile-first interfaces that look stunning on every device. Pixel-perfect layouts with smooth interactions and animations.</p>
       </div>
       <div class="service-card reveal reveal-delay-3">
-        <div class="service-icon">🗄️</div>
+        <div class="service-icon"></div>
         <h3 class="service-title">Database Design</h3>
         <p class="service-desc">Efficient database architecture using MySQL and MongoDB. Optimized queries, proper indexing, and data integrity guaranteed.</p>
       </div>
       <div class="service-card reveal reveal-delay-1">
-        <div class="service-icon">🔌</div>
+        <div class="service-icon"></div>
         <h3 class="service-title">API Development</h3>
         <p class="service-desc">RESTful APIs that power your applications. Clean architecture, proper authentication, and comprehensive documentation.</p>
       </div>
       <div class="service-card reveal reveal-delay-2">
-        <div class="service-icon">🛠️</div>
+        <div class="service-icon"></div>
         <h3 class="service-title">Management Systems</h3>
         <p class="service-desc">Custom business management systems — inventory, school, farm, or any domain — tailored to your exact workflow needs.</p>
       </div>
       <div class="service-card reveal reveal-delay-3">
-        <div class="service-icon">🚀</div>
+        <div class="service-icon"></div>
         <h3 class="service-title">Performance Optimization</h3>
         <p class="service-desc">Audit and optimize existing websites for speed, SEO, and accessibility. Better scores, better user experience.</p>
       </div>
@@ -1255,24 +1255,21 @@ function handleFormSubmit(btn){
   },1500);
 }
 
-// ===== PROFILE PICTURE UPLOAD =====
-const avatarImg=document.getElementById('avatarImg');
-avatarImg.addEventListener('click',()=>{
-  const input=document.createElement('input');
-  input.type='file';input.accept='image/*';
-  input.onchange=e=>{
-    const file=e.target.files[0];
-    if(!file)return;
-    const reader=new FileReader();
-    reader.onload=ev=>{
-      avatarImg.innerHTML=`<img src="${ev.target.result}" alt="Shuel Kiin">`;
-    };
-    reader.readAsDataURL(file);
-  };
-  input.click();
-});
-avatarImg.style.cursor='pointer';
-avatarImg.title='Click to upload your photo';
+// ===== PROFILE PICTURE FROM GITHUB =====
+const avatarImg = document.getElementById('avatarImg');
+
+avatarImg.innerHTML = `
+  <img 
+    src="https://raw.githubusercontent.com/shuelkiin/portfolio/main/WhatsApp%20Image%202026-05-27%20at%2021.11.08.jpeg"
+    alt="Shuel Kiin"
+    style="
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:50%;
+    "
+  >
+`;
 
 // ===== HOVER TILT ON PROJECT CARDS =====
 document.querySelectorAll('.project-card').forEach(card=>{
